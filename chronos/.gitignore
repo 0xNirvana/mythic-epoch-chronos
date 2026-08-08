@@ -1,0 +1,9 @@
+credentials.json
+**/credentials.json
+*.pem
+.env
+__pycache__/
+*.pyc
+.DS_Store
+dist/
+build/

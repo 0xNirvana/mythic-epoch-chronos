@@ -1,0 +1,48 @@
+# Secrets and credentials — never commit
+credentials.json
+**/credentials.json
+*-credentials.json
+service-account*.json
+*.pem
+*.key
+.env
+.env.*
+!.env.example
+
+# Mythic / local runtime
+*.log
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.venv/
+venv/
+.envrc
+
+# Built payloads and agent artifacts
+dist/
+build/
+*.egg-info/
+payloads/
+*.bin
+*.exe
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Local notes that may contain secrets
+CURSOR_HANDOFF.md
+*_HANDOFF.md
+secrets/
+
+# Generated mythic-cli install trees (run scripts/sync_install_trees.sh)
+install/chronos/Payload_Type/
+install/epoch/C2_Profiles/
+
+# Local harness output (scripts/checkin_suite_a.py)
+checkin_suite_a/
