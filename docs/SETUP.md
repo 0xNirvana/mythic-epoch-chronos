@@ -113,8 +113,6 @@ git clone https://github.com/0xNirvana/mythic-epoch-chronos.git
 export REPO=~/mythic-epoch-chronos
 ```
 
-Or download the repo as a ZIP and extract it — set `REPO` to that path.
-
 SSH clone:
 
 ```bash
@@ -240,7 +238,7 @@ Success: a **Chronos callback** appears in Mythic. Task **`whoami`** first — o
 
 ## Step 10 — Expect this
 
-- **Latency** — Tens of seconds per task round trip; not TCP-beacon speed.
+- **Latency** — ~30–120s per task round trip (poll-interval dependent); not TCP-beacon speed.
 - **First check-in** — Can take up to ~4 minutes in worst-case Calendar lag.
 - **Files** — Download/upload practical max ~500 KB, single-shot.
 - **Scale** — One shared calendar supports roughly 10–20 agents before quota gets tight.
